@@ -1,0 +1,45 @@
+/* Conteneur principal */
+.bdm-maillot-item {
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end; /* Aligne tout le contenu à droite */
+	flex-direction: column;
+	text-transform: capitalize;
+	position: relative; /*Nécessaire pour positinonner le prix dans le conteneur
+	text-align: right; /* Aligne le texte à droite */
+  }
+  /* Image de couverture */
+.bdm-maillot-item-cover {
+	height: 280px;
+	width: 220px;
+	border-radius: 20px;
+	object-fit: cover; /* Ajuste l'image pour qu'elle remplisse bien le conteneur */
+	position: relative;
+  }
+
+  /* Style du prix */
+.bdm-maillot-item-price {
+	position: absolute;
+	top: 10px; /* Distance par rapport au haut */
+	right: 10px; /* Distance par rapport au côté droit */
+	background-color: rgba(0, 0, 255, 0.8); /* Fond bleu semi-transparent */
+	color: white; /* Couleur du texte */
+	padding: 5px 10px; /* Espacement interne */
+	font-size: 14px; /* Taille du texte */
+	font-weight: bold; /* Texte en gras */
+	border-radius: 5px; /* Coins arrondis */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
+	z-index: 10; /* Met le prix au-dessus de l'image */
+  }
+
+  /* Style pour le nom */
+.bdm-maillot-item-name {
+	margin-top: 10px; /* Espacement entre le nom et l'image */
+	font-size: 18px; /* Taille du texte */
+	font-weight: bold; /* Texte en gras */
+	color: #333; /* Couleur du texte (gris foncé) */
+	text-align: center; /* Centrer le texte */
+	text-transform: capitalize; /* Premier caractère en majuscule */
+  }
+

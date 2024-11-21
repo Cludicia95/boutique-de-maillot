@@ -1,0 +1,29 @@
+/*Ici on met de Banner en style. pour se faire il faudrait déclarer un '<div classNames=".bdm-title-banner"/>' dans le composant Banner avant de le styler dans Banner.css */
+
+.bdm-banner{ /*les styles ici, prennent en compte le titre uniquement puisque ("bdm-title-banner") est unique pour le titre"*/
+
+color: blueviolet; /*la couleur du title*/
+text-align: right; /* basculer le title a gauche*/
+padding: 32px; /*espace en title*/
+border-bottom: solid 3px black; /*permet de définir une bordure en bas d'un élément
+                                 _ border-bottom : cette propriété cible uniquement la bordure inférieure de l'élément.
+                                 _ solid : cela spécifie que la bordure doit être continue (un trait plein). Il existe d'autres types comme dotted (pointillé) ou dashed (tiré).
+                                 _3px : cela définit l'épaisseur de la bordure, ici de 3 pixels.
+                                 _black : définit la couleur de la bordure, ici noire.*/
+display: flex;/* Cette propriété définit un conteneur comme un conteneur flexbox. Lorsque vous appliquez cette règle à un élément parent, tous ses enfants (les éléments directs à l'intérieur de ce conteneur) deviennent des éléments flexibles. Cela vous permet de contrôler leur disposition plus facilement.*/
+justify-content: flex-end; /* aligne les éléments enfants vers la fin de l'axe principal, ce qui signifie qu'ils se placeront à droite du conteneur*/
+flex-direction: row; /* La propriété flex-direction détermine l'orientation des éléments dans le conteneur flex. Par défaut, cette propriété est définie sur row, ce qui signifie que les éléments enfants seront disposés horizontalement (de gauche à droite). Si vous utilisiez column, les éléments seraient disposés verticalement (de haut en bas). */
+align-items: center; /* Cette propriété permet d'aligner les éléments enfants sur l'axe transversal (l'axe vertical, si l'orientation est row). align-items: center; aligne les éléments enfants au centre de l'axe transversal, donc au milieu du conteneur dans le sens vertical. */
+
+}
+.bdm-title-banner{
+
+    padding: auto;
+}
+
+.bdm-logo-nba{
+    height: 45px;
+	width: 45px;
+    
+}
+
